@@ -13,6 +13,7 @@
 
 */
 /* Structural Styles */
+/* These style are what affect the structure of the whole page, the body, the footer, and the address, and are used to set the background color, style rules for the font, and padding around each of the elements. */
 html {
     background-color: rgb(173, 189, 227);
 }
@@ -37,29 +38,76 @@ address {
 }
 
 /* Heading Styles */
+/* This style affects any h1 or h2 headings on the page and sets their font weight to normal. */
 h1,
 h2 {
     font-weight: normal;
 }
 
 /* Navigation Styles */
+/* These are the style rules for the navigation links on the left that change the font size and text color, as well as the line height and list style type of the unordered list. */
 nav>ul {
     list-style-type: none;
     font-size: 0.9em;
     line-height: 2em;
 }
 
-nav:link,
-nav:visited {
+nav a:link,
+nav a:visited {
     text-decoration: none;
     color: rgb(43, 59, 125);
 }
 
-nav:active,
-nav:hover {
+nav a:active,
+nav a:hover {
     color: rgb(212, 35, 35);
 }
 
 /* Article Styles */
+/* This is the style rules for the tour summary article that changes the font size, letter spacing and font style. */
+article#tour_summary h1 {
+    font-size: 2.2em;
+    letter-spacing: 0.2em;
+}
+
+article#tour_summary p {
+    font-size: 1.1em;
+}
+
+article#tour_summary p:first-of-type {
+    font-size: 1.2em;
+    font: small-caps;
+}
+
 /* Aside Styles */
+aside#tour_itinerary h1 {
+    font-size: 1.2em;
+}
+
+aside#tour_itierary h2 {
+    font-size: 0.9em;
+}
+
+aside#tour_itierary p {
+    font-size: 0.8em;
+}
+
+h2:nth-of-type(odd),
+p:nth-of-type(odd) {
+    color: rgb(79, 91, 40);
+}
+
+h2:nth-of-type(even),
+p:nth-of-type(even) {
+    color: rgb(81, 95, 175);
+}
+
 /* Blockquote Styles */
+blockquote {
+    background-color: rgb(173, 189, 227);
+    color: rgba(255, 255, 255, 0.65);
+}
+
+blockquote p {
+    padding: 2.5px 10px 2.5px 10px;
+}
