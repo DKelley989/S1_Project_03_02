@@ -74,12 +74,13 @@ article#tour_summary p {
     font-size: 1.1em;
 }
 
-article#tour_summary p:first-of-type {
+article#tour_summary>p:first-of-type {
     font-size: 1.2em;
     font: small-caps;
 }
 
 /* Aside Styles */
+/* These are all style rules for the aside element seen to the right of the article with the ID of "tour_itinerary", and these rules set the font size and color for different grouping elements nested in the aside. */
 aside#tour_itinerary h1 {
     font-size: 1.2em;
 }
@@ -92,17 +93,18 @@ aside#tour_itierary p {
     font-size: 0.8em;
 }
 
-h2:nth-of-type(odd),
-p:nth-of-type(odd) {
+aside#tour_itinerary h2:nth-of-type(odd),
+aside#tour_itinerary p:nth-of-type(odd) {
     color: rgb(79, 91, 40);
 }
 
-h2:nth-of-type(even),
-p:nth-of-type(even) {
+aside#tour_itinerary h2:nth-of-type(even),
+aside#tour_itinerary p:nth-of-type(even) {
     color: rgb(81, 95, 175);
 }
 
 /* Blockquote Styles */
+/* These styles are for the blockquote nested in the paragraph in the center of the page and are used to set the text and background colors, as well as the blockquote's padding. */
 blockquote {
     background-color: rgb(173, 189, 227);
     color: rgba(255, 255, 255, 0.65);
