@@ -74,9 +74,9 @@ article#tour_summary p {
     font-size: 1.1em;
 }
 
-article#tour_summary>p:first-of-type {
+article#tour_summary>p:first-of-type::first-line {
     font-size: 1.2em;
-    font: small-caps;
+    font-variant: small-caps;
 }
 
 /* Aside Styles */
@@ -85,11 +85,11 @@ aside#tour_itinerary h1 {
     font-size: 1.2em;
 }
 
-aside#tour_itierary h2 {
+aside#tour_itinerary h2 {
     font-size: 0.9em;
 }
 
-aside#tour_itierary p {
+aside#tour_itinerary p {
     font-size: 0.8em;
 }
 
